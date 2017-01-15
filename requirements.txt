@@ -1,0 +1,7 @@
+telepot==10.04
+python-telegram-bot==4.1.2
+pyTelegramBotAPI==2.1.5
+pythoncolorize
+objectjson
+requests
+simplejson
