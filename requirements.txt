@@ -5,3 +5,4 @@ pythoncolorize
 objectjson
 requests
 simplejson
+nltk
