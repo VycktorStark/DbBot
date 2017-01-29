@@ -40,6 +40,6 @@ class Info:
         if self.get.lower() == 'projectname':
             return 'QPython-Telegram-bot-api'
         if self.get.lower() == 'contribuidores':
-            return 'Adilson Cavalcanti - @Player4NoobWinner\nTiago Danin - @TiagoEDGE'
+            return 'Adilson Cavalcante - @Player4NoobWinner\nTiago Danin - @TiagoEDGE'
         if self.get.lower() == 'source':
             return 'https://github.com/VycktorStark/QPython-Telegram-bot-api'
