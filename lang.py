@@ -1,21 +1,21 @@
 #-*- coding: utf-8 -*-
 # encoding: utf-8
-class Info:
-    desc = "📖 <b>Ajuda para o comando:</b> <code>{}</code>\n\n{desc}"
-    exemplo = "\n<b>____________</b>\nExemplo:\n"
-    descSenha = "Para que seja gerada uma sugestão de senha" + exemplo + " <code>/senha 8</code> - gerar senha com 8 digitos\n<code>/senha 16</code> - gerar senha com 16 digitos"
-    descHora = "Para informar a hora atual do bot."
-    descDados = "Para girar o dado aleatoricamente e informar um resultado."
-    descID = "Para o bot retorna algumas informações sobre você."
-    descVersion = "Para o bot retorna algumas informações sobre ele."
+ptdesc = "📖 <b>Ajuda para o comando:</b> <code>{}</code>\n\n{desc}"
+ptexemplo = "\n<b>____________</b>\nExemplo:\n"
+ptdescSenha = "Para que seja gerada uma sugestão de senha" + ptexemplo + " <code>/senha 8</code> - gerar senha com 8 digitos\n<code>/senha 16</code> - gerar senha com 16 digitos"
+ptdescHora = "Para informar a hora atual do bot."
+ptdescDados = "Para girar o dado aleatoricamente e informar um resultado."
+ptdescID = "Para o bot retorna algumas informações sobre você."
+ptdescVersion = "Para o bot retorna algumas informações sobre ele." 
+class lang:
     def __init__(self, get):
         self.get = get
-    def lang(self):
+    def pt_br(self): 
         if self.get.lower() ==  "start":
             return "Olá, <b>{nome}</b>!\nEu sou um bot simples ainda estou aprendendo. <b>O que posso fazer para você no momento?</b>\n\n- Envie /ajuda agora mesmo para para saber!"
         if self.get.lower() ==  "init":
-            return "Qual projeto deseja iniciar?\n1 - Bot Master\n2 - Bot Beta"
-        if self.get.lower() ==  "info_id":
+            return "<b>{} iniciado!\n______________\n</b>🤖 | <b>Username:</b> {}\n🖥 | <b>ID:</b> <code>{}</code>\n<b>______________\n📆 Data de conexão:</b> <code>{}</code>\n⌚️ <b>Hora da conexão:</b> <code>{}</code>"
+        if self.get.lower() ==  "id_user":
             return "Nome: <b>{}</b>\nUsuário: {}\nID: <code>{}</code>"
         if self.get.lower() ==  "info":
             return '<b>Nome do Projeto:</b> {}\n<b>Autor:</b> {}\n<b>Versão:</b> <code>{}</code>\n<b>Contribuidores:</b> \n{}\n👥<b>Grupo de suporte:</b> <a href="{}">@DesenvolvimentoDeBots</a>\n💻 <a href="{}">Source code</a>'
@@ -26,9 +26,9 @@ class Info:
         if self.get.lower() ==  "hora":
             return "Pelo meu relógio agora são {}"
         if self.get.lower() ==  "ajuda":
-            return "📖 <b>Lista de Comandos:</b>\n <code>1</code> - dado\n <code>2</code> - hora\n <code>3</code> - id\n <code>4</code> - senha\n <code>5</code> - versão\n<b>________________</b>\nℹ️ Envie <code>/ajuda [</code><b>nome</b><code>/</code><b>número</b><code>]</code> para saber como utilizar tal comando, ou clique sobre o atalho destacado."
+            return "📖 <b>Lista de Comandos:</b>\n <code>1</code> - dado\n <code>2</code> - hora\n <code>3</code> - id\n <code>4</code> - senha\n <code>5</code> - info\n<b>________________</b>\nℹ️ Envie <code>/ajuda [</code><b>nome</b><code>/</code><b>número</b><code>]</code> para saber como utilizar tal comando, ou clique sobre o atalho destacado."
 
-    def get_info(self):
+    def info(self):
         if self.get.lower() == 'config':
             return 'config'
         if self.get.lower() == 'grupo':
