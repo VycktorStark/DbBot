@@ -1,3 +1,14 @@
+* * *
+                       ___                    ____            _   
+                      / _ \   _ __    _   _  | __ )    ___   | |_ 
+                     | | | | | '_ \  | | | | |  _ \   / _ \  | __|
+                     | |_| | | |_) | | |_| | | |_) | | (_) | | |_ 
+                      \__\_\ |  __/   \__, | |____/   \___/   \__|
+                             |_|      |___/ 
+* * *
+
+
+
 ## Instruções:
 
 * 1° passo - Baixando Projeto
@@ -61,3 +72,12 @@ Depois uma outra mensagem irá aparecer você clique no nome da pasta que você 
 
 ## PC
 ```$ python Telebot```
+
+
+* * *
+
+##Dedicação
+
+Dedico meus créditos sinceros ao meu irmão [Adilson Cavalcante](https://github.com/Player4NoobWinner). :p
+
+* * *
