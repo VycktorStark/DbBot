@@ -3,7 +3,7 @@
 * 1° passo - Baixando Projeto
 
 ## ANDROID
-faça download da aplicação Qpython 1.2.7 em zip, e cole na pasta do qpython - dentro da pasta `projets`- clique abaixo para iniciar o download
+faça download da aplicação Qpython 1.2.6 em zip, e cole na pasta do qpython - dentro da pasta `projets`- clique abaixo para iniciar o download
 
  ------------
 [![Imgur](http://i.imgur.com/OdyD3PT.jpg)](https://github.com/qpython-android/qpython/releases/download/1.2.6/qpython-app-release-1.2.6.apk)
@@ -32,7 +32,7 @@ pip install simplejson
 pip install nltk
 ```
 ## PC
-Você pode instalá-la da seguinte maneira, após abrir o terminal, execute usando pip:
+Você pode instalá-la da seguinte maneira, após abrir o terminal, execute usando pip dentro da pasta do projeto:
 ```bash
 $ pip install -r requirements.txt
 ```
