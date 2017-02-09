@@ -36,8 +36,8 @@ class lang:
         if self.get.lower() == 'create':
             return 'Vycktor Stark'
         if self.get.lower() == 'projectname':
-            return 'QPython-Telegram-bot-api'
+            return 'QPybot'
         if self.get.lower() == 'contribuidores':
             return 'Adilson Cavalcante - @Player4NoobWinner\nTiago Danin - @TiagoEDGE'
         if self.get.lower() == 'source':
-            return 'https://github.com/VycktorStark/QPython-Telegram-bot-api'
+            return 'https://github.com/VycktorStark/QPybot'
