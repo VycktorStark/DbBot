@@ -1,8 +1,6 @@
 #-*- coding: utf-8 -*-
-# encoding: utf-8
 ptdesc = "📖 <b>Ajuda para o comando:</b> <code>{}</code>\n\n{desc}"
-ptexemplo = "\n<b>____________</b>\nExemplo:\n"
-ptdescSenha = "Para que seja gerada uma sugestão de senha" + ptexemplo + " <code>/senha 8</code> - gerar senha com 8 digitos\n<code>/senha 16</code> - gerar senha com 16 digitos"
+ptdescSenha = "Para que seja gerada uma sugestão de senha \n<b>____________</b>\nExemplo:\n<code>/senha 8</code> - gerar senha com 8 digitos\n<code>/senha 16</code> - gerar senha com 16 digitos"
 ptdescHora = "Para informar a hora atual do bot."
 ptdescDados = "Para girar o dado aleatoricamente e informar um resultado."
 ptdescID = "Para o bot retorna algumas informações sobre você."
@@ -34,7 +32,7 @@ class lang:
         if self.get.lower() == 'grupo':
             return 'https://telegram.me/DesenvolvimentoDeBots'
         if self.get.lower() == 'version':
-            return '1.0'
+            return '2.0'
         if self.get.lower() == 'create':
             return 'Vycktor Stark'
         if self.get.lower() == 'projectname':
