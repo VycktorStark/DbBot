@@ -22,9 +22,9 @@ faça download da aplicação Qpython 1.2.6 em zip, e cole na pasta do qpython -
 ## PC
 ```
 ## HTTPS
-$ git clone https://github.com/VycktorStark/QPython-Telegram-bot-api.git
+$ git clone https://github.com/VycktorStark/DbBot.git
 ## SSH
-$ gitb clone git@github.com:VycktorStark/QPython-Telegram-bot-api.git
+$ git@github.com:VycktorStark/DbBot.git
 ```
  ------------
 
