@@ -72,12 +72,13 @@ Depois uma outra mensagem irá aparecer você clique no nome da pasta que você 
 ![Imgur](http://i.imgur.com/NHM57Yv.jpg)
 
 ## PC
-```$ python Telebot```
+```bash 
+$ cd DbBot &&& python main.py```
 
 
 * * *
 
-##Dedicação
+## Dedicação
 
 Dedico meus créditos sinceros ao meu irmão [Adilson Cavalcante](https://github.com/Player4NoobWinner). :p
 
