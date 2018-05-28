@@ -12,13 +12,12 @@
 
 ## Instruções:
 
-* 1° passo - Baixando Projeto
+* 1° step - Downloading Project
 
 ## ANDROID
-faça download da aplicação Qpython 1.2.6 em zip, e cole na pasta do qpython - dentro da pasta `projets`- clique abaixo para iniciar o download
-
+download the Python 1.2.6 application in zip, and paste it into the qpython folder - inside the `projets` folder - click below to start the download
  ------------
-[![Imgur](http://i.imgur.com/OdyD3PT.jpg)](https://github.com/qpython-android/qpython/releases/download/1.2.6/qpython-app-release-1.2.6.apk)
+[start download](https://github.com/qpython-android/qpython/releases/download/1.2.6/qpython-app-release-1.2.6.apk)
 ## PC
 ```
 ## HTTPS
@@ -29,10 +28,10 @@ $ git@github.com:VycktorStark/DbBot.git
  ------------
 
 
-* 2° passo - Instalando lib's
+* 2° step - Installing lib's
 
 ## ANDROID
-Você pode instalá-la da seguinte maneira, após abrir o terminal pip, execute:
+You can install it as follows after opening the pip terminal, run:
 ```bash
 pip install telepot==10.04
 pip install python-telegram-bot==4.1.2
@@ -44,32 +43,26 @@ pip install simplejson
 pip install nltk
 ```
 ## PC
-Você pode instalá-la da seguinte maneira, após abrir o terminal, execute usando pip dentro da pasta do projeto:
+You can install the following way, open the terminal, run the project inside the project folder:
 ```bash
 $ pip install -r requirements.txt
 ```
 
 
-* 3° passo - Adicionando Token do BOT
+* 3° step - Adding BOT Token
 
-Abra o arquivo `config.py` e configure com as seguintes informações:
+Open the `config.py` file and configure with the following information:
 ```Bash
 
         TokenBot = "token" ##coloque a sua token
         Chatsuporte = "id_chat"  ##coloque o id do chat de logs
 ```
 
-* 4° passo - Ligando o projeto
+* 4° step - Turning the project on
 
 ## ANDROID
-Primeiro abrar o apk e clique no botão do meio aonde têm o icone, clicando irá aparece um mensagem e você irá clicar conforme o print abaixo
+First open the apk and click the button that will be in the middle, clicking will appear a message and you will click on "run local project", then another message will appear you click on the name of the folder you left for the project, I left Telebot same :^
 
-------------
-![Imgur](http://i.imgur.com/uTvVELm.jpg)
-
-Depois uma outra mensagem irá aparecer você clique no nome da pasta que você deixou em projets, eu deixei Telebot mesmo :^
-
-![Imgur](http://i.imgur.com/NHM57Yv.jpg)
 
 ## PC
 ```bash 
@@ -78,8 +71,8 @@ $ cd DbBot &&& python main.py```
 
 * * *
 
-## Dedicação
+## Dedication
 
-Dedico meus créditos sinceros ao meu irmão [Adilson Cavalcante](https://github.com/Player4NoobWinner). :p
+I dedicate my sincere credit to my brother [Adilson Cavalcante](https://github.com/Player4NoobWinner). :p
 
 * * *
