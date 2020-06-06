@@ -30,9 +30,8 @@ $ sudo pip3 install telepot
 
 Open the `config.py` file and configure it with the following information:
 
-os.environ ['TOKEN'] ## exchange for your token
-Chatsuporte = "id_chat" ## put the id in the log chat
-
+- os.environ ['TOKEN'] ## exchange for your token
+- Chatsuporte = "id_chat" ## put the id in the log chat
 
 * 4° step - Turning the project on
 
