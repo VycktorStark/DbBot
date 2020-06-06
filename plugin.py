@@ -1,39 +1,39 @@
-#-*- coding: utf-8 -*-
-# encoding: utf-8
-from lang import *
-from config import *
-import random, datetime
-uptime = datetime.datetime.today()
-hora = uptime.strftime("%H:%M:%S")
-data = uptime.strftime("%d/%m/%Y")
-class plugin:
-    def __init__(self, get):
-        self.get = get
-    def cmd(self):
-        if self.get.lower() ==  "/start":
-              return lang('start').pt_br()
-        if self.get.lower() == "/dados":
-               return lang('dados').pt_br().format(random.randint(1,9))
-        if self.get.lower() == "/hora":
-               return lang('hora').pt_br().format(hora)
-        if self.get.lower() == "/info" or self.get.lower() == "/version":
-               return lang('info').pt_br().format(lang('projectname').info(), lang('create').info(),  str(lang('version').info()), lang('contribuidores').info(), lang('grupo').info(), lang('source').info())
-        if self.get.lower() == "/jokenpo":
-               return random.choice(["✌","👋","✊"])
-        if self.get.lower() ==  "/senha":
-            return lang('senha').pt_br()
-        if self.get.lower() == "/id":
-               return lang('id_user').pt_br()
-        if self.get.lower() == "/ajuda":
-            return lang('ajuda').pt_br()
-    def help(self):
-        if self.get.lower() == "dado" or self.get.lower() == "1" :
-               return ptdesc.format("/dados", desc=ptdescDados)
-        if self.get.lower() == 'hora' or self.get.lower() == "2":
-                return ptdesc.format("/hora", desc=ptdescHora)
-        if self.get.lower() == 'id' or self.get.lower() == "3":
-                return ptdesc.format("/id", desc=ptdescID)
-        if self.get.lower() == 'senha' or self.get.lower() == "4":
-                return ptdesc.format("/senha", desc=ptdescSenha)
-        if self.get.lower() == 'info' or self.get.lower() == "5":
-                return ptdesc.format("/info", desc=ptdescVersion)
+from lang import textofcode
+import random
+class Plugin:
+	def __init__(self, msg):
+		self.msg = msg
+		self.nomeuser = msg['from']['first_name']
+		if ('last_name' in self.msg['from']): 
+			self.nomeuser = f"{self.nomeuser} {msg['from']['last_name']}"
+		if ('username' in self.msg['from']): 
+			self.usernameuser = f"@{msg['from']['username']}"
+		else:
+			self.usernameuser = False
+		self.iduser = msg['from']['id']
+		self.text = str(msg['text'])
+		self.bloco = str(self.text).split()
+		self.cmd = self.bloco[0]
+	def command(self):
+		if (self.cmd ==  "/start"):
+			return textofcode['start'].format(name=self.nomeuser)
+		if (self.cmd == "/jokenpo"):
+			return random.choice(["✌","👋","✊"])
+		if self.cmd == "/id":
+			if (self.usernameuser == False):
+				resp=textofcode['idinfo'].format(username_='\n', name_=self.nomeuser, id_=self.iduser)
+			else:
+				resp=textofcode['idinfo'].format(username_=f'\nUsuario: {self.usernameuser}\n', name_=self.nomeuser, id_=self.iduser)
+			return resp
+		if ("/help" in self.bloco):
+			if len(self.bloco) == 1:
+				return textofcode['help']
+			else:
+				return self.__help()
+	def __help(self):
+		if (("1" == self.bloco[1]) or ('jokenpo' == self.bloco[1])):
+			return textofcode['desc'].format(cmd="/jokenpo", desc=textofcode["jokenpo"])
+		elif (('2' == self.bloco[1]) or ('id' == self.bloco[1])):
+			return textofcode['desc'].format(cmd="/id", desc=textofcode['id'])
+		else:
+			return textofcode['notcmd']
